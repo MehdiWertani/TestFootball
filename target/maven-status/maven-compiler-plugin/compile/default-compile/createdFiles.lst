@@ -1,0 +1,15 @@
+com\test\FootballNice\entities\Equipe.class
+com\test\FootballNice\mappers\EquipeMapperImpl.class
+com\test\FootballNice\mappers\JoueurMapperImpl.class
+com\test\FootballNice\dtos\EquipeDto.class
+com\test\FootballNice\repositories\JoueurRepository.class
+com\test\FootballNice\controllers\JoueurController.class
+com\test\FootballNice\mappers\EquipeMapper.class
+com\test\FootballNice\dtos\JoueurDto.class
+com\test\FootballNice\controllers\EquipeController.class
+com\test\FootballNice\services\EquipeService.class
+com\test\FootballNice\repositories\EquipeRepository.class
+com\test\FootballNice\FootballNiceApplication.class
+com\test\FootballNice\mappers\JoueurMapper.class
+com\test\FootballNice\entities\Joueur.class
+com\test\FootballNice\services\JoueurService.class

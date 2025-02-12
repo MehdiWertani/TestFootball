@@ -1,0 +1,5 @@
+com\test\FootballNice\FootballNiceApplicationTests.class
+com\test\FootballNice\controllers\EquipeControllerTest.class
+com\test\FootballNice\controllers\JoueurControllerTest.class
+com\test\FootballNice\entities\EquipeTest.class
+com\test\FootballNice\entities\JoueurTest.class

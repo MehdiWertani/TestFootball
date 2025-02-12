@@ -1,0 +1,43 @@
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/footballdb
+      SPRING_DATASOURCE_USERNAME: mehdi
+      SPRING_DATASOURCE_PASSWORD: mehdi123
+    networks:
+      - mynetwork
+      
+  javadoc:
+    image: nginx
+    container_name: javadoc_server
+    volumes:
+      - ./target/site/apidocs:/usr/share/nginx/html
+    ports:
+      - "8081:80"
+
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: footballdb
+      POSTGRES_USER: mehdi
+      POSTGRES_PASSWORD: mehdi123
+    ports:
+      - "5440:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - mynetwork
+      
+
+networks:
+  mynetwork:
+
+volumes:
+  db_data:

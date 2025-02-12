@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.test.FootballNice.controllers.EquipeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.014 s -- in com.test.FootballNice.controllers.EquipeControllerTest
